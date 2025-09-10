@@ -3,10 +3,16 @@
   "name": "Auto PDF Fullscreen",
   "version": "1.0",
   "description": "Open PDFs from a specific domain in fullscreen.",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "permissions": ["tabs", "scripting"],
   "content_scripts": [
     {
-      "matches": ["*://learn.canterbury.ac.nz/mod/resource/view.php?id=*"],
+      "matches": ["*://learn.canterbury.ac.nz/mod/resource/view.php?id=*"] ,
       "js": ["content.js"]
     }
   ]
